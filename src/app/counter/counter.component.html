@@ -1,0 +1,16 @@
+<section class="user-form-card" aria-labelledby="user-form-title">
+    <h2 id="user-form-title">Counter APP</h2>
+     <div [ngSwitch]='getCounterStatus()'>
+        <p *ngSwitchCase="'Positive'" style="color:green;">Counter is Positive</p>
+        <p *ngSwitchCase="'Negative'" style="color:red;">Counter is Negative</p>
+        <p *ngSwitchCase="'Zero'" style="color:blue;">Counter is Zero</p>
+    </div>
+    
+
+    <button (click)="increment()" class="btn btn-primary"> ++</button>
+    <span class=""> {{countervalue}} </span>
+    <button (click)="decrement()" class="btn btn-ghost">--</button>
+    <button (click)="reset()" class="btn btn-secondary"> Reset </button>
+
+   
+</section>
