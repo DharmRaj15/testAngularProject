@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { StopWatchComponent } from './stop-watch/stop-watch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    ToDoComponent
+    ToDoComponent,
+    StopWatchComponent
   ],
   imports: [
     BrowserModule,
