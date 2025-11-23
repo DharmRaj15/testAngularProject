@@ -1,1 +1,11 @@
-<p>stop-watch works!</p>
+
+<section class="user-form-card" aria-labelledby="user-form-title">
+    <h2 id="user-form-title">Stop Watch Application</h2>
+    <h3>Elapsed Time: {{ elapsedTime | number : "1.1"}} seconds</h3>
+    <div class="buttons">
+        <button (click)="startStopwatch()" class="btn btn-primary" [disabled]="isRunning">Start</button>
+        <button (click)="stopStopwatch()" class="btn btn-debug" [disabled]="!isRunning">Stop</button>
+        <button (click)="resetStopwatch()" class="btn btn-ghost">Reset</button>
+        <button (click)="startstop()" class="btn btn-secondary">Start/Stop</button>
+    </div>
+</section>
